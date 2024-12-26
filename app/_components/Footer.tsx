@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <section className="bg-blue w-full flex flex-col text-white px-4 md:px-44 py-4">
-        <div className="flex md:flex-row flex-col justify-center gap-4 md:gap-16 items-start">
+    <section className="bg-blue w-full max-lg:flex-wrap flex flex-col text-white px-8 md:px-16 lg:px-44 py-4">
+        <div className="flex md:flex-row flex-col justify-center gap-8 lg:gap-16 items-start">
             <div className="flex flex-col gap-0 items-center pb-4 md:pb-8">
                 <Image src={logo} alt="logo" width={120} height={120} />
                 <h1 className="text-2xl font-semibold text-center">Dakess Construction Limited</h1>
@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-2">
                     <p>Call: +233 550 302 4319 </p>
                     <p>Email: yakubur259@gmail.com</p>
-                    <p>Address: Sapeiman adjacent Vkays Lodge, Ghana</p>
+                    <p>Address: Sapeiman adjacent Vkays Lodge,<br /> Ghana</p>
                 </div>
             </div>
         </div>

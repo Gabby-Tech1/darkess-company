@@ -39,10 +39,10 @@ const Navbar = () => {
             {mobileDrawerOpen && (
                 <div className="fixed right-0 z-20 w-full p-12 flex flex-col bg-white justify-center items-center lg:hidden text-blue bg-opacity-70">
                     <ul className='font-semibold text-lg'>
-                        <Link href="/" className='duration-300 ease-in py-3 text-center cursor-pointer'>Home</Link> <hr className='w-60'/>
-                        <Link href="/about" className='duration-300 ease-in py-3 text-center cursor-pointer'>About Us</Link> <hr className='w-60'/>
-                        <Link href="/services" className='duration-300 ease-in py-3 text-center cursor-pointer'>Services</Link> <hr className='w-60'/>
-                        <Link href="/contact" className='duration-300 ease-in py-3 text-center cursor-pointer'>Contact</Link>
+                        <Link href="/"><li className='duration-300 ease-in py-3 text-center cursor-pointer'>Home</li></Link> <hr className='w-60'/>
+                        <Link href="/about"><li className='duration-300 ease-in py-3 text-center cursor-pointer'>About Us</li></Link> <hr className='w-60'/>
+                        <Link href="/services"><li className='duration-300 ease-in py-3 text-center cursor-pointer'>Services</li></Link> <hr className='w-60'/>
+                        <Link href="/contact"><li className='duration-300 ease-in py-3 text-center cursor-pointer'>Contact</li></Link>
                     </ul>
                 </div>
             )}
