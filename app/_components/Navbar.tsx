@@ -24,11 +24,10 @@ const Navbar = () => {
                     {/* <span className="text-2xl font-bold tracking-wide">Dakess Construction</span> */}
                 </div>
                 <ul className="hidden lg:flex ml-14 space-x-12 font-medium text-lg text-white">
-                    <li className='duration-300 ease-in cursor-pointer'>Home</li>
-                    <li className='duration-300 ease-in cursor-pointer'>About Us</li>
-                    <li className='duration-300 ease-in cursor-pointer'>Services</li>
-                    <li className='duration-300 ease-in cursor-pointer'>Projects</li>
-                    <li className='duration-300 ease-in cursor-pointer'>Contact</li>
+                    <Link href="/" className='duration-300 ease-in cursor-pointer'>Home</Link>
+                    <Link href="/about" className='duration-300 ease-in cursor-pointer'>About Us</Link>
+                    <Link href="/services" className='duration-300 ease-in cursor-pointer'>Services</Link>
+                    <Link href="/contact" className='duration-300 ease-in cursor-pointer'>Contact</Link>
                 </ul>
                 <div className="lg:hidden md:flex md:flex-col justify-end text-white">
                     <button onClick={toggleNavbar}>
@@ -40,11 +39,10 @@ const Navbar = () => {
             {mobileDrawerOpen && (
                 <div className="fixed right-0 z-20 w-full p-12 flex flex-col bg-white justify-center items-center lg:hidden text-blue bg-opacity-70">
                     <ul className='font-semibold text-lg'>
-                        <li className='duration-300 ease-in py-3 text-center cursor-pointer'>Home</li> <hr className='w-60'/>
-                        <li className='duration-300 ease-in py-3 text-center cursor-pointer'>About Us</li> <hr className='w-60'/>
-                        <li className='duration-300 ease-in py-3 text-center cursor-pointer'>Services</li> <hr className='w-60'/>
-                        <li className='duration-300 ease-in py-3 text-center cursor-pointer'>Projects</li> <hr className='w-60'/>
-                        <li className='duration-300 ease-in py-3 text-center cursor-pointer'>Contact</li>
+                        <Link href="/" className='duration-300 ease-in py-3 text-center cursor-pointer'>Home</Link> <hr className='w-60'/>
+                        <Link href="/about" className='duration-300 ease-in py-3 text-center cursor-pointer'>About Us</Link> <hr className='w-60'/>
+                        <Link href="/services" className='duration-300 ease-in py-3 text-center cursor-pointer'>Services</Link> <hr className='w-60'/>
+                        <Link href="/contact" className='duration-300 ease-in py-3 text-center cursor-pointer'>Contact</Link>
                     </ul>
                 </div>
             )}

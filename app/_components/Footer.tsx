@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from '@/public/logo-img.png'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <section className="bg-blue w-full flex flex-col text-white px-4 md:px-44 absolute bottom-0 py-4">
+    <section className="bg-blue w-full flex flex-col text-white px-4 md:px-44 py-4">
         <div className="flex md:flex-row flex-col justify-center gap-4 md:gap-16 items-start">
             <div className="flex flex-col gap-0 items-center pb-4 md:pb-8">
                 <Image src={logo} alt="logo" width={120} height={120} />
@@ -13,10 +14,10 @@ const Footer = () => {
             <div className="flex flex-col gap-4 md:justify-center">
                 <h1 className="font-semibold">Important Links</h1>
                 <ul className="flex flex-col gap-2">
-                    <li className="cursor-pointer">Home</li>
-                    <li className="cursor-pointer">About Us</li>
-                    <li className="cursor-pointer">Services</li>
-                    <li className="cursor-pointer">Contact Us</li>
+                    <Link href="/" className="cursor-pointer">Home</Link>
+                    <Link href="/about" className="cursor-pointer">About Us</Link>
+                    <Link href="/services" className="cursor-pointer">Services</Link>
+                    <Link href="/contact" className="cursor-pointer">Contact Us</Link>
                 </ul>
             </div>
             <div className="flex flex-col gap-4 justify-center mb-4">
