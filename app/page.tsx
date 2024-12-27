@@ -14,8 +14,8 @@ export default function Home() {
         <div className="absolute">
           <div className='flex justify-between flex-col-reverse lg:flex-row items-center max-md:px-4 lg:gap-20'>
             <div className="flex gap-4 items-center">
-              <Image src={Hero1} alt="Engineer at work" width={280} height={330} className='max-md:w-[200px]'/>
-              <Image src={Hero2} alt="Engineer at work" width={280} height={380} className='max-md:w-[200px]'/>
+              <Image src={Hero1} alt="Engineer at work" width={280} height={330} className='max-md:w-[200px] max-sm:w-[180x]'/>
+              <Image src={Hero2} alt="Engineer at work" width={280} height={380} className='max-md:w-[200px] max-sm:w-[180x]'/>
             </div>
             <div className="flex flex-col gap-8 text-white">
               <div className="lg:w-[40vw] flex flex-col gap-2">
