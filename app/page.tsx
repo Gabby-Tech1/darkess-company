@@ -9,13 +9,13 @@ import { Expertise, Choose } from './_constants'
 export default function Home() {
   return (
     <div className='overflow-x-hidden w-screen'>
-      <div className="lg:h-[85vh] h-[95vh] flex items-center justify-center  overflow-x-hidden">
+      <div className="lg:h-[85vh] max-sm:h-[95vh] h-[90vh] flex items-center justify-center  overflow-x-hidden">
         <Image src={Hero} alt="hero section" className="bg-cover bg-center relative w-full h-full" />
         <div className="absolute">
           <div className='flex justify-between flex-col-reverse lg:flex-row items-center max-md:px-4 lg:gap-20'>
             <div className="flex gap-4 items-center">
-              <Image src={Hero1} alt="Engineer at work" width={280} height={330} className='max-md:w-[200px] max-sm:w-[180x]'/>
-              <Image src={Hero2} alt="Engineer at work" width={280} height={380} className='max-md:w-[200px] max-sm:w-[180x]'/>
+              <Image src={Hero1} alt="Engineer at work" width={280} height={330} className='max-md:w-[150px]'/>
+              <Image src={Hero2} alt="Engineer at work" width={280} height={380} className='max-md:w-[150px]'/>
             </div>
             <div className="flex flex-col gap-8 text-white">
               <div className="lg:w-[40vw] flex flex-col gap-2">
