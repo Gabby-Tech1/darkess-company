@@ -19,10 +19,10 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 backdrop-blur-lg bg-blue shadow-md">
         <div className="container px-4 mx-auto relative text-sm">
             <div className="flex justify-between items-center">
-                <div className="flex items-center flex-shrink-0">
+                <Link href='/' className="flex items-center flex-shrink-0">
                     <Image src={logo} alt="logo" width={80} className='mr-1'/>
                     {/* <span className="text-2xl font-bold tracking-wide">Dakess Construction</span> */}
-                </div>
+                </Link>
                 <ul className="hidden lg:flex ml-14 space-x-12 font-medium text-lg text-white">
                     <Link href="/" className='duration-300 ease-in cursor-pointer'>Home</Link>
                     <Link href="/about" className='duration-300 ease-in cursor-pointer'>About Us</Link>
@@ -39,10 +39,10 @@ const Navbar = () => {
             {mobileDrawerOpen && (
                 <div className="fixed right-0 z-20 w-full p-12 flex flex-col bg-white justify-center items-center lg:hidden text-blue bg-opacity-70">
                     <ul className='font-semibold text-lg'>
-                        <Link href="/"><li className='duration-300 ease-in py-3 text-center cursor-pointer'>Home</li></Link> <hr className='w-60'/>
-                        <Link href="/about"><li className='duration-300 ease-in py-3 text-center cursor-pointer'>About Us</li></Link> <hr className='w-60'/>
-                        <Link href="/services"><li className='duration-300 ease-in py-3 text-center cursor-pointer'>Services</li></Link> <hr className='w-60'/>
-                        <Link href="/contact"><li className='duration-300 ease-in py-3 text-center cursor-pointer'>Contact</li></Link>
+                        <Link href="/"><li onClick={toggleNavbar} className='duration-300 ease-in py-3 text-center cursor-pointer'>Home</li></Link> <hr className='w-60'/>
+                        <Link href="/about"><li onClick={toggleNavbar} className='duration-300 ease-in py-3 text-center cursor-pointer'>About Us</li></Link> <hr className='w-60'/>
+                        <Link href="/services"><li onClick={toggleNavbar} className='duration-300 ease-in py-3 text-center cursor-pointer'>Services</li></Link> <hr className='w-60'/>
+                        <Link href="/contact"><li onClick={toggleNavbar} className='duration-300 ease-in py-3 text-center cursor-pointer'>Contact</li></Link>
                     </ul>
                 </div>
             )}
