@@ -16,76 +16,50 @@ const page = () => {
           className="bg-cover bg-center relative w-full h-full"
         />
         <div className="absolute">
-          <div className="text-white text-center flex ">
-            <h1 className="text-4xl md:text-xl font-bold">
+          <div className="text-white flex flex-col items-center justify-center">
+            <h1 className="text-5xl font-bold">Our Services</h1>
+            <p className="md:text-xl text-center md:px-32 px-4">
               At Dakess Drilling and Construction Limited, we offer a
               comprehensive range of services to meet your infrastructure needs.
-            </h1>
+            </p>
           </div>
         </div>
       </div>
-      <div className="py-10 flex flex-col gap-10">
-        <div className="py-10 flex flex-col items-center">
-          <h1 className="text-2xl">We offer the following services</h1>
-          {/* <p className='text-blue text-3xl text-center md:text-4xl '>Dakess Drilling And Construction Limited</p>
-                <p className='text-center lg:px-44 md:px-10 px-4'>At Dakess Drilling and Construction Limited, 
-                  we are a leading provider of expert drilling and construction services, dedicated to 
-                  delivering high-quality solutions to our clients. With a strong commitment to safety, 
-                  innovation, and customer satisfaction, we have established ourselves as a trusted partner
-                   in the industry.</p> */}
-        </div>
-        <div className="flex items-center flex-col-reverse md:flex-row justify-center gap-10 lg:gap-20 lg:mx-44 px-4">
-          <Image
-            src={Founder1}
-            alt="picture of the founder"
-            width={300}
-            height={450}
-          />
-          <div className="flex flex-col gap-4">
-            <h1 className="text-3xl text-blue font-semibold">
-              Drilling and Construction Services
-            </h1>
-            <p className="text-lg">- Borehole drilling for water supply</p>
-            <p className="text-lg">
-              - Foundation drilling for construction projects
-            </p>
-            <p className="text-lg">- Construction management</p>
-            <p className="text-lg">- Site investigation and assessment</p>
+      <div className="py-10 flex flex-col gap-10 lg:mx-44 px-4">
+        <h1 className="text-2xl text-center">We offer the following services</h1>
+        <div className='py-8 flex flex-col gap-10'>
+          <div className='flex flex-col md:flex-row items-center justify-between gap-10'>
+            <div className="flex flex-col gap-3">
+              <h1 className="text-3xl text-blue font-semibold">Drilling & Construction</h1>
+              <ul>
+                <li className="text-lg">- Borehole drilling for water supply</li>
+                <li className="text-lg">- Foundation drilling for construction projects</li>
+                <li className="text-lg">- Construction management</li>
+              </ul>
+            </div>
+            <Image src={Founder1} alt="Founder1" width={400} height={450} />
           </div>
-        </div>
-        <div className="py-10 flex items-center flex-col-reverse md:flex-row justify-center gap-10 lg:gap-20 lg:mx-44 px-4">
-          <div className="flex flex-col gap-4">
-            <h1 className="text-3xl text-blue font-semibold">
-              Borehole Installation
-            </h1>
-            <p className="text-lg">- Design and installation of boreholes</p>
-            <p className="text-lg">- Borehole rehabilitation and maintenance</p>
-            <p className="text-lg">- Water yield testing and analysis</p>
+          <div className='flex flex-col md:flex-row-reverse items-center justify-between gap-10'>
+          <div className="flex flex-col gap-3">
+              <h1 className="text-3xl text-blue font-semibold">Borehole Installation</h1>
+              <ul>
+                <li className="text-lg">- Design and installation of boreholes</li>
+                <li className="text-lg">- Borehole rehabilitation and maintenance</li>
+                <li className="text-lg">- Water yield testing and analysis</li>    
+              </ul>
+            </div>
+            <Image src={Founder2} alt="Founder1" width={400} height={450} />
           </div>
-          <Image
-            src={Founder2}
-            alt="picture of the founder"
-            width={300}
-            height={450}
-          />
-        </div>
-
-        <div className="py-10 px-10 flex items-center flex-col-reverse md:flex-row justify-center gap-10 lg:gap-20 lg:mx-44 px-4">
-          <Image
-            src={Founder3}
-            alt="picture of the founder"
-            width={300}
-            height={450}
-          />
-          <div className="flex flex-col gap-4">
-            <h1 className="text-3xl text-blue font-semibold">
-              Water Treatment Solutions
-            </h1>
-            <p className="text-lg">- Water purification systems</p>
-            <p className="text-lg">- Water filtration systems</p>
-            <p className="text-lg">
-              - Water treatment plant design and installation
-            </p>
+          <div className='flex flex-col md:flex-row items-center justify-between gap-10'>
+          <div className="flex flex-col gap-3">
+              <h1 className="text-3xl text-blue font-semibold">Water Treatment Solutions</h1>
+              <ul>
+                <li className="text-lg">- Water purification systems</li>
+                <li className="text-lg">- Water filtration systems</li>
+                <li className="text-lg">- Water treatment plant design and installation</li>
+              </ul>
+            </div>
+            <Image src={Founder3} alt="Founder3" width={400} height={450} />
           </div>
         </div>
       </div>
@@ -93,7 +67,7 @@ const page = () => {
 
 
       {/* Geological Survey */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-6 px-10 md:px-24">
           <div className="bg-gray-50 shadow-lg rounded-lg overflow-hidden">
             <div className="p-6">
               <h3 className="text-lg font-bold text-blue-600">Geological Survey</h3>
@@ -164,7 +138,7 @@ const page = () => {
      
       {/* buttonImage */}
 
-      <div className="md:h-[60vh] h-[50vw] flex items-center justify-center w-screen">
+      <div className="md:h-[60vh] h-[70vw] flex items-center justify-center w-screen">
         <Image
           src={Founder}
           alt="hero section for about page"
@@ -177,12 +151,10 @@ const page = () => {
                      range of services to meet your infrastructure needs.
 
                     </h1> */}
-            <div className="text-center max-w-4xl mx-auto">
+            <div className="text-center">
               <h2 className="text-3xl font-bold mb-6">Why Choose Dakess?</h2>
-              <ul className="list-disc list-inside text-lg space-y-4">
-                <li>
-                  Experienced professionals with decades of combined experience
-                </li>
+              <ul className="list-disc list-inside md:text-lg space-y-4">
+                <li>Experienced professionals with decades of combined experience</li>
                 <li>State-of-the-art equipment</li>
                 <li>Customer-centric solutions</li>
                 <li>Safety-first approach</li>

@@ -22,27 +22,22 @@ const ContactPage = () => {
         </div>
 
       {/* Contact Info Section */}
-      <div className="bg-white py-12 px-6 sm:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          <div className="bg-red-600 text-white p-6 rounded-md flex flex-col items-center !important">
+      <div className="bg-white py-12 px-6 md:px-32">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="bg-blue text-white p-6 rounded-md flex flex-col items-center !important">
             <p className="text-xl font-bold">PHONE</p>
             <p className="mt-2">+233 55 302 4319</p>
             <p>+233 24 295 9650</p>
           </div>
-          <div className="bg-red-600 text-white p-6 rounded-md flex flex-col items-center">
-            <p className="text-xl font-bold">PHONE</p>
-            <p className="mt-2">+233 55 302 4319</p>
-            <p>+233 24 295 9650</p>
-          </div>
-          <div className="bg-red-600 text-white p-6 rounded-md flex flex-col items-center">
+          <div className="bg-blue text-white p-6 rounded-md flex flex-col items-center">
             <p className="text-xl font-bold">LOCATION</p>
             <p className="mt-2 text-center">Sapleiman Adjacent to VKAY Lodge</p>
           </div>
-          <div className="bg-red-600 text-white p-6 rounded-md flex flex-col items-center">
+          <div className="bg-blue text-white p-6 rounded-md flex flex-col items-center">
             <p className="text-xl font-bold">EMAIL</p>
             <p className="mt-2">yakubur259@gmail.com</p>
           </div>
-          <div className="bg-red-600 text-white p-6 rounded-md flex flex-col items-center">
+          <div className="bg-blue text-white p-6 rounded-md flex flex-col items-center">
             <p className="text-xl font-bold">WORKING HOURS</p>
             <p className="mt-2">Mon-Fri: 08am-09pm</p>
             <p>Saturday: 1pm-10pm</p>
@@ -88,7 +83,7 @@ const ContactPage = () => {
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-600 text-white py-3 px-6 rounded-md font-bold hover:bg-blue-700"
+              className="bg-blue text-white py-3 px-6 rounded-md font-bold hover:bg-blue-700"
             >
               Submit
             </button>
@@ -97,7 +92,7 @@ const ContactPage = () => {
       </div>
 
       {/* Footer Note */}
-      <div className="bg-white py-6">
+      <div className="bg-white py-6 px-6 md:px-32">
         <p className="text-center text-gray-600">
           Please don’t hesitate to contact us with any questions, enquiries or project proposals.
         </p>
