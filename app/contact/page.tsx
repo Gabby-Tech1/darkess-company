@@ -8,7 +8,7 @@ const ContactPage = () => {
   return (
     <section>
       {/* Background Section */}
-      <div className="md:h-[60vh] h-[50vw] flex items-center justify-center w-screen">
+      <div className="md:h-[60vh] h-[70vw] flex items-center justify-center w-screen">
             <Image src={Hero} alt="hero section for about page" className="bg-cover bg-center relative w-full h-full" />
             <div className="absolute">
                 <div className="text-white text-center flex ">
@@ -24,23 +24,23 @@ const ContactPage = () => {
       {/* Contact Info Section */}
       <div className="bg-white py-12 px-6 md:px-32">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-blue text-white p-6 rounded-md flex flex-col items-center !important">
+          <div className="bg-blue text-white p-2 md:p-6 rounded-md flex flex-col items-center !important">
             <p className="text-xl font-bold">PHONE</p>
-            <p className="mt-2">+233 55 302 4319</p>
-            <p>+233 24 295 9650</p>
+            <p className="mt-2 max-sm:text-sm">+233 55 302 4319</p>
+            <p className="max-sm:text-sm">+233 24 295 9650</p>
           </div>
-          <div className="bg-blue text-white p-6 rounded-md flex flex-col items-center">
+          <div className="bg-blue text-white p-2 md:p-6 rounded-md flex flex-col items-center">
             <p className="text-xl font-bold">LOCATION</p>
-            <p className="mt-2 text-center">Sapleiman Adjacent to VKAY Lodge</p>
+            <p className="mt-2 text-center max-sm:text-sm">Sapleiman Adjacent to VKAY Lodge</p>
           </div>
-          <div className="bg-blue text-white p-6 rounded-md flex flex-col items-center">
+          <div className="bg-blue text-white p-2 md:p-6 rounded-md flex flex-col items-center">
             <p className="text-xl font-bold">EMAIL</p>
-            <p className="mt-2">yakubur259@gmail.com</p>
+            <p className="mt-2 max-sm:text-sm">yakubur259@gmail.com</p>
           </div>
-          <div className="bg-blue text-white p-6 rounded-md flex flex-col items-center">
+          <div className="bg-blue text-white p-2 md:p-6 rounded-md flex flex-col items-center">
             <p className="text-xl font-bold">WORKING HOURS</p>
-            <p className="mt-2">Mon-Fri: 08am-09pm</p>
-            <p>Saturday: 1pm-10pm</p>
+            <p className="mt-2 max-sm:text-sm">Mon-Fri: 08am-09pm</p>
+            <p className="max-sm:text-sm">Saturday: 1pm-10pm</p>
           </div>
         </div>
       </div>

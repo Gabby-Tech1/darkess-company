@@ -9,7 +9,7 @@ import Image from 'next/image'
 const page = () => {
   return (
     <div>
-      <div className="md:h-[60vh] h-[50vw] flex items-center justify-center w-screen">
+      <div className="md:h-[60vh] h-[70vw] flex items-center justify-center w-screen">
         <Image
           src={Hero}
           alt="hero section for about page"
